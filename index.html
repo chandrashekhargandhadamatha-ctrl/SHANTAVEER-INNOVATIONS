@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHANTAVEER INNOVATIONS</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading — Shantaveer Innovations</title>
 
-    <!-- FIX: Browser tab icon -->
-    <link rel="icon" type="image/png" href="/SHANTAVEER-INNOVATIONS/logo.png" />
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        font-family: Arial, sans-serif;
+        color: #0a5ea8;
+    }
 
-    <meta name="description" content="Shantaveer Innovations Project" />
-    <meta name="author" content="Shantaveer Innovations" />
+    .container {
+        text-align: center;
+    }
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Shantaveer Innovations" />
-    <meta property="og:description" content="Official Website of Shantaveer Innovations" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/logo.png" />
+    .spinner {
+        width: 70px;
+        height: 70px;
+        border: 6px solid rgba(255,255,255,0.2);
+        border-top: 6px solid #0a5ea8;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: auto;
+    }
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Shantaveer Innovations" />
-    <meta name="twitter:description" content="Official Website of Shantaveer Innovations" />
-    <meta name="twitter:image" content="/logo.png" />
-    <script type="module" crossorigin src="/SHANTAVEER-INNOVATIONS/assets/index-DG5aoFq5.js"></script>
-  </head>
+    @keyframes spin {
+        100% { transform: rotate(360deg); }
+    }
 
-  <body>
-    <div id="root"></div>
-  </body>
+    h2 {
+        margin-top: 25px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        color: #aaa;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="spinner"></div>
+    <h2>SHANTAVEER INNOVATIONS</h2>
+    <p>Loading, please wait...</p>
+</div>
+
+</body>
 </html>
